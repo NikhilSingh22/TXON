@@ -1,0 +1,125 @@
+*{
+padding:0;
+margin:0;
+}
+
+body{
+   
+    min-height: 100vh;
+}
+
+.theme{
+    margin:20px;
+    display: flex;
+    align-items: center;
+}
+.checkbox{
+    opacity: 0;
+    position:absolute;
+}
+
+.label
+{
+    background-color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    padding-left:7px;
+    border-radius: 50px;
+    height: 26px;
+    width: 60px;
+}
+.ball{
+    position:absolute;
+    border-radius: 50%;
+    top:2px;
+    left:7px;
+    background-color: #fff;
+    width: 22px;
+    height: 22px;
+    transition: transform 0.2s linear;
+}
+.fa-moon{
+    color:#f1c40f;
+}
+.fa-sun{
+    color: #f39c12;
+}
+.checkbox:checked + .label .ball{
+    transform: translate(32px);
+}
+
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width:30%;
+    height: 80vh;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+.display{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.display #screen{
+    width: 98%;
+    height: 150px;
+    font-size: 30px;
+    outline: none;
+    border: none;
+    text-align: right;
+    border-radius: 15px;
+    padding-right:.5em;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+.btns{
+    width: 100%;
+    margin-top: 1.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.org{
+    background-color: #fed702;
+}
+.operator{
+    background-color: #fb9421;
+    color:white;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.del{
+    background-color: #fb2121;
+}
+
+.equ
+{
+    background-color: greenyellow;
+}
+
+.btns .row button{
+    width: 80px;
+    height: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    margin:5px;
+    border-radius: 6px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+    transition: transform 0.5s ease;
+}
+.btns .row button:hover{
+    transform: scale(1.2);
+}

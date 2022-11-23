@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="theme">
+      <input type="checkbox" class="checkbox" id="checkbox" />
+      <label for="checkbox" class="label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+    <div class="container">
+      <div class="box">
+        <div class="display">
+          <input id="screen" type="text" placeholder="0" />
+        </div>
+        <div class="btns">
+          <div class="row">
+            <button onclick="sin()" class="org">sin</button>
+            <button onclick="cos()" class="org">cos</button>
+            <button class="btn org">AC</button>
+            <button class="btn del">Del</button>
+          </div>
+          <div class="row">
+            <button onclick="tan()">tan</button>
+            <button onclick="log()">log</button>
+            <button onclick="ln()">ln</button>
+            <button class="btn operator">%</button>
+          </div>
+          <div class="row">
+            <button class="btn">(</button>
+            <button class="btn">)</button>
+            <button onclick="root()">√</button>
+            <button class="btn operator">÷</button>
+            <!-- ÷ -->
+          </div>
+          <div class="row">
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn operator">*</button>
+          </div>
+          <div class="row">
+            <!-- √ -->
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn operator">-</button>
+          </div>
+          <div class="row">
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn operator">+</button>
+          </div>
+          <div class="row">
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button onclick="power()">x²</button>
+            <button class="btn equ">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./Calc.js" defer></script>
+</html>
